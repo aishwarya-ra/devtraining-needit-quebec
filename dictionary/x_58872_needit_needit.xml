@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element label="New field 2" max_length="40" name="new_field_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="fn" label="Request type" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="finance" sequence="0" value="fn"/>
+                <element inactive_on_update="false" label="marketing" sequence="1" value="mr"/>
+                <element inactive_on_update="false" label="ops" sequence="2" value="op"/>
+                <element inactive_on_update="false" label="hr" sequence="3" value="hr"/>
+            </choice>
+        </element>
+        <element default="0.0" label="Decimal field" max_length="15" name="u_decimal_1" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+    </element>
+</database>
